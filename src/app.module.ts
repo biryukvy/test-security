@@ -1,10 +1,9 @@
 import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
+import { SsjsInjectionsModule } from './ssjs-injections/ssjs-injections.module';
 
 @Module({
-  imports: [],
-  controllers: [AppController],
-  providers: [AppService],
+  imports: [SsjsInjectionsModule],
+  controllers: [],
+  providers: [],
 })
 export class AppModule {}
